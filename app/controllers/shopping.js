@@ -9,8 +9,13 @@ export default Ember.Controller.extend({
 
   actions: {
     saveItem() {
-      var temp = this.get('quantity');
-      alert(temp);
+      var item = this.store.createRecord("item", {
+          name: this.get('name'),
+          quantity: this.get('quantity'),
+          notes: this.get('notes')
+      });
+
+      item.save();
     }
   }
 });
