@@ -8,16 +8,14 @@
       </tr>
     </thead>
     <tbody>
+      {{#each model as |item|}}
       <tr>
-        <td>Apple</td>
-        <td>5</td>
-        <td>Green</td>
+        <td>{{item.name}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.notes}}</td>
       </tr>
-      <tr>
-        <td>Dog food</td>
-        <td>12</td>
-        <td>Big tins</td>
-      </tr>
+
+      {{/each}}
       <tr>
         <td>{{input type="text" value=name class="form-control"}}</td>
         <td>{{input type="text" value=quantity class="form-control"}}</td>
