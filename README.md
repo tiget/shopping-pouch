@@ -1,7 +1,6 @@
 # shopping-pouch
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a small, offline-first web app that aims to be used as a shopping list. More info to come as the projecte expands.
 
 ## Prerequisites
 
