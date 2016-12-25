@@ -12,10 +12,15 @@ export default Ember.Controller.extend({
       var item = this.store.createRecord("item", {
           name: this.get('name'),
           quantity: this.get('quantity'),
-          notes: this.get('notes')
+          notes: this.get('notes'),
+          id: "test"
       });
 
       item.save();
+    },
+
+    deleteItem(item) {
+      item.destroyRecord();
     }
   }
 });
