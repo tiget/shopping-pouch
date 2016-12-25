@@ -13,6 +13,7 @@
         <td>{{item.name}}</td>
         <td>{{item.quantity}}</td>
         <td>{{item.notes}}</td>
+        <td><button class="btn btn-default" {{action 'deleteItem'}}>Delete</button></td>
       </tr>
 
       {{/each}}
