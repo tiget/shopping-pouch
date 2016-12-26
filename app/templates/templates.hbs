@@ -1,7 +1,7 @@
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Week
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Week xyz</a></li>
-  </ul>
+<div class="container">
+  <select class="btn btn-primary form-control">
+      {{#each model as |template|}}
+        <option>{{template.name}}</option>
+      {{/each}}
+  </select>
 </div>

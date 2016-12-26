@@ -1,12 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-
-
-
-
-  bears: ['meme', 'memer'],
-
   actions: {
     saveItem() {
       var item = this.store.createRecord("item", {
