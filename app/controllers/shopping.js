@@ -6,8 +6,7 @@ export default Ember.Controller.extend({
       var item = this.store.createRecord("item", {
           name: this.get('name'),
           quantity: this.get('quantity'),
-          notes: this.get('notes'),
-          id: "test"
+          notes: this.get('notes')
       });
 
       item.save();
